@@ -1,0 +1,6 @@
+{
+  "name": "Ipoh Town By Serenity",
+  "description": "Experience luxury, comfort, and serenity at Ipoh Town By Serenity in Perak, Malaysia. Premium boutique hotel with plush accommodations and central heritage access.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
