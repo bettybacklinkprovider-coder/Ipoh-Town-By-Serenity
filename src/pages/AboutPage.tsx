@@ -95,28 +95,67 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBooking 
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="glass-purple-card p-6 rounded-2xl border border-[#D4AF37]/20 space-y-3">
-            <ShieldCheck className="w-8 h-8 text-[#E5C158]" />
-            <h3 className="font-serif text-lg font-bold text-[#F8F5EE]">Pristine Cleanliness & Safety</h3>
-            <p className="text-xs text-[#EBE5DA]/70 leading-relaxed">
-              We adhere to strict hygiene protocols, contactless keyless entry options, and continuous air purification across all guest rooms and public spaces.
-            </p>
+          <div className="glass-purple-card rounded-2xl overflow-hidden border border-[#D4AF37]/25 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col group shadow-lg">
+            <div className="relative h-44 overflow-hidden">
+              <img
+                src={HOTEL_IMAGES.serenitySuite}
+                alt="Pristine Cleanliness & Safety"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A0B2E] via-[#1A0B2E]/40 to-transparent" />
+              <div className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-[#120722]/85 border border-[#D4AF37]/50 flex items-center justify-center backdrop-blur-md">
+                <ShieldCheck className="w-5 h-5 text-[#E5C158]" />
+              </div>
+            </div>
+            <div className="p-6 space-y-2 flex-1">
+              <h3 className="font-serif text-lg font-bold text-[#F8F5EE] group-hover:text-[#E5C158] transition-colors">Pristine Cleanliness & Safety</h3>
+              <p className="text-xs text-[#EBE5DA]/75 leading-relaxed">
+                We adhere to strict hygiene protocols, contactless keyless entry options, and continuous air purification across all guest rooms and public spaces.
+              </p>
+            </div>
           </div>
 
-          <div className="glass-purple-card p-6 rounded-2xl border border-[#D4AF37]/20 space-y-3">
-            <Award className="w-8 h-8 text-[#E5C158]" />
-            <h3 className="font-serif text-lg font-bold text-[#F8F5EE]">Tailored Guest Services</h3>
-            <p className="text-xs text-[#EBE5DA]/70 leading-relaxed">
-              From arranging private airport transfers to curate custom food tour itineraries across Ipoh, our staff takes pride in exceeding your expectations.
-            </p>
+          <div className="glass-purple-card rounded-2xl overflow-hidden border border-[#D4AF37]/25 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col group shadow-lg">
+            <div className="relative h-44 overflow-hidden">
+              <img
+                src={HOTEL_IMAGES.loungeCafe}
+                alt="Tailored Guest Services"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A0B2E] via-[#1A0B2E]/40 to-transparent" />
+              <div className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-[#120722]/85 border border-[#D4AF37]/50 flex items-center justify-center backdrop-blur-md">
+                <Award className="w-5 h-5 text-[#E5C158]" />
+              </div>
+            </div>
+            <div className="p-6 space-y-2 flex-1">
+              <h3 className="font-serif text-lg font-bold text-[#F8F5EE] group-hover:text-[#E5C158] transition-colors">Tailored Guest Services</h3>
+              <p className="text-xs text-[#EBE5DA]/75 leading-relaxed">
+                From arranging private airport transfers to curate custom food tour itineraries across Ipoh, our staff takes pride in exceeding your expectations.
+              </p>
+            </div>
           </div>
 
-          <div className="glass-purple-card p-6 rounded-2xl border border-[#D4AF37]/20 space-y-3">
-            <MapPin className="w-8 h-8 text-[#E5C158]" />
-            <h3 className="font-serif text-lg font-bold text-[#F8F5EE]">Perfect Urban Location</h3>
-            <p className="text-xs text-[#EBE5DA]/70 leading-relaxed">
-              Tucked away in quiet Taman Jubilee while keeping you just minutes away from Ipoh Railway Station, night markets, and limestone cave sanctuaries.
-            </p>
+          <div className="glass-purple-card rounded-2xl overflow-hidden border border-[#D4AF37]/25 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col group shadow-lg">
+            <div className="relative h-44 overflow-hidden">
+              <img
+                src={HOTEL_IMAGES.concubineLane}
+                alt="Perfect Urban Location"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A0B2E] via-[#1A0B2E]/40 to-transparent" />
+              <div className="absolute top-3 left-3 w-9 h-9 rounded-xl bg-[#120722]/85 border border-[#D4AF37]/50 flex items-center justify-center backdrop-blur-md">
+                <MapPin className="w-5 h-5 text-[#E5C158]" />
+              </div>
+            </div>
+            <div className="p-6 space-y-2 flex-1">
+              <h3 className="font-serif text-lg font-bold text-[#F8F5EE] group-hover:text-[#E5C158] transition-colors">Perfect Urban Location</h3>
+              <p className="text-xs text-[#EBE5DA]/75 leading-relaxed">
+                Tucked away in quiet Taman Jubilee while keeping you just minutes away from Ipoh Railway Station, night markets, and limestone cave sanctuaries.
+              </p>
+            </div>
           </div>
         </div>
       </div>

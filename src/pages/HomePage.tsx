@@ -368,46 +368,94 @@ export const HomePage: React.FC<HomePageProps> = ({
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <div className="glass-purple-card p-8 rounded-2xl border border-[#D4AF37]/20 space-y-4">
-            <div className="w-10 h-10 rounded-full bg-gold-gradient p-[1px] flex items-center justify-center">
-              <div className="w-full h-full rounded-full bg-[#1A0B2E] flex items-center justify-center font-serif font-bold text-[#E5C158]">
-                01
+          <div className="glass-purple-card rounded-2xl overflow-hidden border border-[#D4AF37]/25 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col group hover:-translate-y-1 shadow-xl">
+            <div className="relative h-52 sm:h-56 overflow-hidden">
+              <img
+                src={HOTEL_IMAGES.concubineLane}
+                alt="Unrivaled Central Location in Ipoh"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A0B2E] via-[#1A0B2E]/40 to-transparent" />
+              
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#120722]/85 border border-[#D4AF37]/50 flex items-center justify-center backdrop-blur-md shadow-lg">
+                <span className="font-serif font-bold text-[#E5C158] text-sm">01</span>
+              </div>
+              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#120722]/80 border border-[#D4AF37]/30 text-[11px] text-[#E5C158] font-medium backdrop-blur-sm">
+                Taman Jubilee, Ipoh
               </div>
             </div>
-            <h3 className="font-serif text-xl font-bold text-[#F8F5EE]">
-              Unrivaled Central Location
-            </h3>
-            <p className="text-xs text-[#EBE5DA]/70 leading-relaxed">
-              Situated on Jalan Sultan Iskandar in Taman Jubilee, you are within short walking distance to Ipoh's iconic Concubine Lane, renowned white coffee cafes, and night markets.
-            </p>
+
+            <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif text-xl font-bold text-[#F8F5EE] group-hover:text-[#E5C158] transition-colors">
+                  Unrivaled Central Location
+                </h3>
+                <p className="text-xs sm:text-sm text-[#EBE5DA]/75 leading-relaxed mt-2">
+                  Situated on Jalan Sultan Iskandar in Taman Jubilee, you are within short walking distance to Ipoh's iconic Concubine Lane, renowned white coffee cafes, and night markets.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="glass-purple-card p-8 rounded-2xl border border-[#D4AF37]/20 space-y-4">
-            <div className="w-10 h-10 rounded-full bg-gold-gradient p-[1px] flex items-center justify-center">
-              <div className="w-full h-full rounded-full bg-[#1A0B2E] flex items-center justify-center font-serif font-bold text-[#E5C158]">
-                02
+          <div className="glass-purple-card rounded-2xl overflow-hidden border border-[#D4AF37]/25 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col group hover:-translate-y-1 shadow-xl">
+            <div className="relative h-52 sm:h-56 overflow-hidden">
+              <img
+                src={HOTEL_IMAGES.serenitySuite}
+                alt="Plush & Tranquil Rooms"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A0B2E] via-[#1A0B2E]/40 to-transparent" />
+              
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#120722]/85 border border-[#D4AF37]/50 flex items-center justify-center backdrop-blur-md shadow-lg">
+                <span className="font-serif font-bold text-[#E5C158] text-sm">02</span>
+              </div>
+              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#120722]/80 border border-[#D4AF37]/30 text-[11px] text-[#E5C158] font-medium backdrop-blur-sm">
+                Soundproof Luxury
               </div>
             </div>
-            <h3 className="font-serif text-xl font-bold text-[#F8F5EE]">
-              Plush & Tranquil Rooms
-            </h3>
-            <p className="text-xs text-[#EBE5DA]/70 leading-relaxed">
-              Designed with soundproofing, custom blackout curtains, therapeutic mattresses, and individual climate control for deep, uninterrupted sleep after a day of exploration.
-            </p>
+
+            <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif text-xl font-bold text-[#F8F5EE] group-hover:text-[#E5C158] transition-colors">
+                  Plush & Tranquil Rooms
+                </h3>
+                <p className="text-xs sm:text-sm text-[#EBE5DA]/75 leading-relaxed mt-2">
+                  Designed with soundproofing, custom blackout curtains, therapeutic mattresses, and individual climate control for deep, uninterrupted sleep after a day of exploration.
+                </p>
+              </div>
+            </div>
           </div>
 
-          <div className="glass-purple-card p-8 rounded-2xl border border-[#D4AF37]/20 space-y-4">
-            <div className="w-10 h-10 rounded-full bg-gold-gradient p-[1px] flex items-center justify-center">
-              <div className="w-full h-full rounded-full bg-[#1A0B2E] flex items-center justify-center font-serif font-bold text-[#E5C158]">
-                03
+          <div className="glass-purple-card rounded-2xl overflow-hidden border border-[#D4AF37]/25 hover:border-[#D4AF37]/60 transition-all duration-300 flex flex-col group hover:-translate-y-1 shadow-xl">
+            <div className="relative h-52 sm:h-56 overflow-hidden">
+              <img
+                src={HOTEL_IMAGES.loungeCafe}
+                alt="Warm Malaysian Hospitality"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1A0B2E] via-[#1A0B2E]/40 to-transparent" />
+              
+              <div className="absolute top-4 left-4 w-10 h-10 rounded-xl bg-[#120722]/85 border border-[#D4AF37]/50 flex items-center justify-center backdrop-blur-md shadow-lg">
+                <span className="font-serif font-bold text-[#E5C158] text-sm">03</span>
+              </div>
+              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#120722]/80 border border-[#D4AF37]/30 text-[11px] text-[#E5C158] font-medium backdrop-blur-sm">
+                24/7 Hospitality
               </div>
             </div>
-            <h3 className="font-serif text-xl font-bold text-[#F8F5EE]">
-              Warm Malaysian Hospitality
-            </h3>
-            <p className="text-xs text-[#EBE5DA]/70 leading-relaxed">
-              Our 24-hour concierge team offers personal local recommendations, seamless check-in, secure parking assistance, and responsive care throughout your stay.
-            </p>
+
+            <div className="p-6 space-y-3 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 className="font-serif text-xl font-bold text-[#F8F5EE] group-hover:text-[#E5C158] transition-colors">
+                  Warm Malaysian Hospitality
+                </h3>
+                <p className="text-xs sm:text-sm text-[#EBE5DA]/75 leading-relaxed mt-2">
+                  Our 24-hour concierge team offers personal local recommendations, seamless check-in, secure parking assistance, and responsive care throughout your stay.
+                </p>
+              </div>
+            </div>
           </div>
 
         </div>
